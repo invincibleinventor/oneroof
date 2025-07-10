@@ -18,15 +18,15 @@ export default function Home() {
           
           
          
-          <div className="shadow-xl hover:scale-105 duration-200 ease-linear transition-all bg-pink-900 bg-opacity-5 rounded-3xl px-6 py-12">
-              <div className="flex justify-center items-center mx-auto mb-4 rounded-2xl w-max p-6 bg-gradient-to-t from-white/10 to-pink-500/10">
+          <div className="shadow-xl hover:scale-105 duration-200 ease-linear transition-all bg-purple-900 bg-opacity-5 rounded-3xl px-6 py-12">
+              <div className="flex justify-center items-center mx-auto mb-4 rounded-2xl w-max p-6 bg-gradient-to-t from-white/10 to-purple-500/10">
                  <svg width="24" height="24" className="w-8 h-8  text-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" d="M9.5 11v-1a2.5 2.5 0 0 1 5 0v.039a2 2 0 0 1-.75 1.562l-1 .798a2 2 0 0 0-.75 1.562V15.5m0 1.5v2M5.5 4.5v17m13 0v-17h-2.027m-8.946 0H.5v.25l.055.31a45.7 45.7 0 0 1 0 15.88l-.055.31v.25h23v-.25l-.055-.31a45.7 45.7 0 0 1 0-15.88l.055-.31V4.5h-7.027m-8.946 0a4.5 4.5 0 0 1 8.946 0m-8.946 0h8.946"/></svg>
               </div>
               <h3 className="mb-2 text-lg font-bold mx-auto text-center text-white">Lost Items</h3>
               <p className="text-gray-400 text-sm lg:text-base mx-auto px-6 text-center">Post items that you have lost on the public billboard to alert others and possibly aid you in finding them back.</p>
           </div>
-         <div className="shadow-xl hover:scale-105 duration-200 ease-linear transition-all bg-blue-900 bg-opacity-5 rounded-3xl px-6 py-12">
-              <div className="flex justify-center mx-auto items-center mb-4 rounded-2xl w-max p-6 bg-gradient-to-t from-white/10 to-blue-500/10">
+         <div className="shadow-xl hover:scale-105 duration-200 ease-linear transition-all bg-pink-900 bg-opacity-5 rounded-3xl px-6 py-12">
+              <div className="flex justify-center mx-auto items-center mb-4 rounded-2xl w-max p-6 bg-gradient-to-t from-white/10 to-pink-500/10">
                <svg width="24" height="24" className="text-white w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h2m16 0h-2M5 21h14M5 21V9.328M19 21V9.328m-14 0a2 2 0 0 1-.11-.068l-.54-.36a2 2 0 0 1-.747-2.407l.894-2.236A2 2 0 0 1 6.354 3h11.292a2 2 0 0 1 1.857 1.257l.894 2.236A2 2 0 0 1 19.65 8.9l-.54.36a2 2 0 0 1-.11.068m-14 0a2 2 0 0 0 2.11-.068L9 8l1.89 1.26a2 2 0 0 0 2.22 0L15 8l1.89 1.26a2 2 0 0 0 2.11.068"/><path d="M14 21v-5a2 2 0 1 0-4 0v5"/></g></svg>
               </div>
               <h3 className="mb-2 text-lg font-bold mx-auto text-center text-white">Marketplace</h3>
