@@ -2,55 +2,42 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <div>
+   <div className="bg-gradient-to-t from-neutral-950 to-purple-800/10">
     <section className="">
-  <div className="py-8 px-10 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-      <div className="max-w-screen-md mb-8 lg:mb-16">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">One central place for all needs</h2>
-          <p className=" sm:text-xl text-gray-400">Here at OneRoof, we provide the one central solution for all the needs of every SASTRA student. From a rental marketplace - to a lost and find system, we have got everything covered!</p>
+  <div className="py-8 px-10 mx-auto max-w-screen-xl w-full flex flex-col items-center content-center sm:py-14 lg:px-6">
+      <div className="max-w-screen-md w-full mb-10 md:mt-0 mt-4 md:mb-14">
+          <h2 className="mb-4 text-4xl tracking-tight text-center mx-auto font-semibold text-white">One central place for all your needs</h2>
+          <p className=" sm:text-base my-5 text-gray-300 text-center mx-auto">Here at OneRoof, we provide the one central solution for all the needs of every SASTRA student. From a rental marketplace - to a lost and find system, we have got everything covered for you!</p>
+          <div className="flex mx-auto w-max md:flex-row md:items-end content-end md:space-x-2 flex-col space-x-0 space-y-2 md:space-y-0 mt-8">
+              <button className="font-poppins rounded-full text-sm bg-purple-500/40  px-8 py-4 hover:scale-105 duration-200 transition-all ease-linear hover:bg-neutral-600/10 text-white font-semibold">Get Started</button>
+                <button className="font-poppins rounded-xl text-sm  px-8 py-4 hover:scale-105 duration-200 transition-all ease-linear  text-white font-semibold">Know More</button>
+          </div>
+          
       </div>
       <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-          <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-primary-900">
-                  <svg className="w-5 h-5  lg:w-6 lg:h-6 text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          
+          
+         
+          <div className="shadow-xl hover:scale-105 duration-200 ease-linear transition-all bg-pink-900 bg-opacity-5 rounded-3xl px-6 py-12">
+              <div className="flex justify-center items-center mx-auto mb-4 rounded-2xl w-max p-6 bg-gradient-to-t from-white/10 to-pink-500/10">
+                 <svg width="24" height="24" className="w-8 h-8  text-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="currentColor" d="M9.5 11v-1a2.5 2.5 0 0 1 5 0v.039a2 2 0 0 1-.75 1.562l-1 .798a2 2 0 0 0-.75 1.562V15.5m0 1.5v2M5.5 4.5v17m13 0v-17h-2.027m-8.946 0H.5v.25l.055.31a45.7 45.7 0 0 1 0 15.88l-.055.31v.25h23v-.25l-.055-.31a45.7 45.7 0 0 1 0-15.88l.055-.31V4.5h-7.027m-8.946 0a4.5 4.5 0 0 1 8.946 0m-8.946 0h8.946"/></svg>
               </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Marketing</h3>
-              <p className="text-gray-400">Plan it, create it, launch it. Collaborate seamlessly with all  the organization and hit your marketing goals every month with our marketing plan.</p>
+              <h3 className="mb-2 text-lg font-bold mx-auto text-center text-white">Lost Items</h3>
+              <p className="text-gray-400 text-sm lg:text-base mx-auto px-6 text-center">Post items that you have lost on the public billboard to alert others and possibly aid you in finding them back.</p>
           </div>
-          <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-primary-900">
-                  <svg className="w-5 h-5 lg:w-6 lg:h-6 text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path></svg>
+         <div className="shadow-xl hover:scale-105 duration-200 ease-linear transition-all bg-blue-900 bg-opacity-5 rounded-3xl px-6 py-12">
+              <div className="flex justify-center mx-auto items-center mb-4 rounded-2xl w-max p-6 bg-gradient-to-t from-white/10 to-blue-500/10">
+               <svg width="24" height="24" className="text-white w-8 h-8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h2m16 0h-2M5 21h14M5 21V9.328M19 21V9.328m-14 0a2 2 0 0 1-.11-.068l-.54-.36a2 2 0 0 1-.747-2.407l.894-2.236A2 2 0 0 1 6.354 3h11.292a2 2 0 0 1 1.857 1.257l.894 2.236A2 2 0 0 1 19.65 8.9l-.54.36a2 2 0 0 1-.11.068m-14 0a2 2 0 0 0 2.11-.068L9 8l1.89 1.26a2 2 0 0 0 2.22 0L15 8l1.89 1.26a2 2 0 0 0 2.11.068"/><path d="M14 21v-5a2 2 0 1 0-4 0v5"/></g></svg>
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">Legal</h3>
-              <p className="text-gray-400">Protect your organization, devices and stay compliant with our structured workflows and custom permissions made for you.</p>
+              <h3 className="mb-2 text-lg font-bold mx-auto text-center text-white">Marketplace</h3>
+              <p className="text-sm lg:text-base text-gray-400 mx-auto text-center px-6">Sell your old stuff, excess items or previous year books, unused notebooks, lab manuals, class notes etc on the marketplace</p>
           </div>
-          <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-primary-900">
-                  <svg className="w-5 h-5  lg:w-6 lg:h-6 text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>                    
+          <div className="shadow-xl hover:scale-105 duration-200 ease-linear transition-all bg-green-900 bg-opacity-5 rounded-3xl px-6 py-12">
+              <div className="flex mx-auto justify-center items-center mb-4 rounded-2xl w-max p-6 bg-gradient-to-t from-white/10 to-green-500/10">
+               <svg width="512" height="512" className="w-8 h-8 text-white" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" fill-rule="evenodd" d="m256 34.347l192 110.851v221.703L256 477.752L64 366.901V145.198zM106.666 192.001v150.266l128 73.9V265.902zm298.667.001l-128 73.9v150.265l128-73.9zM256 83.614l-125.867 72.67L256 228.952l125.867-72.67z"/></svg>
               </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Business Automation</h3>
-              <p className="text-gray-500 text-gray-400">Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new templates to help you get started.</p>
-          </div>
-          <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-primary-900">
-                  <svg className="w-5 h-5  lg:w-6 lg:h-6 text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Finance</h3>
-              <p className="text-gray-400">Audit-proof software built for critical financial operations like month-end close and quarterly budgeting.</p>
-          </div>
-          <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-primary-900">
-                  <svg className="w-5 h-5 lg:w-6 lg:h-6 text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Enterprise Design</h3>
-              <p className="text-gray-400">Craft beautiful, delightful experiences for both marketing and product with real cross-company collaboration.</p>
-          </div>
-          <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-primary-900">
-                  <svg className="w-5 h-5  lg:w-6 lg:h-6 text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Operations</h3>
-              <p className="text-gray-400">Keep your company’s lights on with customizable, iterative, and structured workflows built for all efficient teams and individual.</p>
+              <h3 className="mb-2 text-lg font-bold mx-auto text-center text-white">Project Showcase</h3>
+              <p className="text-gray-400 px-6 lg:text-base text-sm mx-auto text-center">Showcase your projects - both hobby or professional ones on the public showcase for others to view, support and critique</p>
           </div>
       </div>
   </div>
