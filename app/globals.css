@@ -1,7 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button-primary{
+    @apply font-poppins rounded-full text-sm bg-purple-300 px-8 py-4 hover:scale-105 duration-200 transition-all ease-linear hover:bg-neutral-300 text-black font-semibold;
+}
+
+ @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .marquee-container {
+      overflow: hidden;
+    }
+
+    .marquee-content {
+      animation: marquee 10s linear infinite;
+      white-space: nowrap;
+    }
+
 .pattern
 {
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
@@ -12,4 +36,7 @@
 }
 .font-poppins {
     font-family: 'Inter', sans-serif;
+}
+.font-pops {
+    font-family: 'Poppins', sans-serif;
 }
